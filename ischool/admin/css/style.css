@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navbar-brand{
+	font-family: 'Sansita Swashed', cursive;
+	font-size: 2em;
+	font-weight: bold;
+	color: white !important;
+}
+.custom_nav_item:hover{
+	background-color:red;
+	border: red 1px;
+	border-radius: 10px;
+}
+.custom_nav .custom_nav_item a{
+	color: white !important;
+}
+.remove_vid_marg{
+	margin: 0px;
+	padding: 0px;
+}
+.vid_parent{
+	position: relative;
+}
+video{
+	width: 100%;
+	height: 100%;
+}
+.vid_overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: blue;
+	z-index: 1;
+	opacity: 0.3;
+}
+.vid_content{
+	position: absolute;;
+	z-index: 2;
+	left: 40%;
+	top: 40%;
+	text-align: center;
+	color: white;
+}
+.striped{
+	background-image: linear-gradient(240deg,#ed213a,#93291e);
+	padding:3rem;
+	height: 13rem;
+	margin-top: 4rem;
+	transform: rotate(10deg);
+	z-index: -5;
+}
+.feedback_img img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+
+.botton-banner{
+	color: #fff;
+	padding: 10px;
+}
+.botton-banner:first-child{
+	padding-left: 50px;
+}
+.contact_us{
+	background-color: grey;
+	font-family: 'Sansita Swashed', cursive;
+	font-size: 2em;
+	font-weight: bold;
+}
+.text_banner{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.social-hover:hover{
+	padding: 13.6px 100px;
+	text-decoration: none;
+	background-color: rgb(95,93,93);
+}
+
+/*Courses Page Section*/
+.gut_overlay{
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: blue;
+	z-index: 1;
+	opacity: 0.3;
+}
+
+.img_box{
+	width: 340px;
+    height: 220px;
+}
+
+
+/*admin pannel Section*/
+
+
+
+
+@media screen and (min-width: 0px) and (max-width:700px){
+	.my_content,
+	.striped{
+		display: none;
+	}
+	
+}

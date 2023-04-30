@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.topbar{
+	width: 100%;
+	height: 50px;
+	background: brown;
+	columns: white;
+}
+.topbar h2{
+	float: right;
+	line-height: 50px;
+	margin-right: 50px;
+	color: white;
+
+
+}
+.header{
+	margin-top: 4px;
+	width: 1000px;
+	height: 120px;
+	border-top: 2px solid gray;
+	margin-right: auto;
+	margin-left: auto; 
+}
+.navbar{
+	width: 1000px;
+	height: 60px;
+	background: brown;
+	margin-left: auto;
+	margin-right: auto;
+}
+.searchbox{
+	float: right;
+	margin-right: 10px;
+	line-height: 60px;
+}
+.searchbox .src{
+	height: 30px;
+}
+.searchbox .btn{
+	font-size: 20px;
+	font-weight: bold;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.menu{
+	width: 700px;
+	float: left;
+}
+.menu ul{
+	margin: 0;
+	padding-top: 10px;
+	line-height: 2em;
+}
+.menu ul li{
+	list-style: none;
+	display: inline;
+	margin: 4px;
+	width: 60px;
+}
+.menu ul li a{
+	color: white;
+	margin: 5px;
+	padding: 3px;
+	text-decoration: none;
+}
+.menu ul li a:hover{
+	color: green;
+	text-decoration: none;
+	text-decoration: none;
+}
+.post{
+	float: left;
+	width: 690px;	
+	background: white;
+	border-right: 2px solid #708090;
+	margin-left:345px;
+	box-sizing: border-box;
+	padding: 4px;
+
+}
+.post a{
+	text-decoration: none;
+	color: black;
+}
+.sidebar{
+	width: 300px;
+	background: gray;
+	float: right;
+	margin-right: 345px;
+	box-sizing: border-box;	
+
+}
+.sidebar h2{
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 24px;
+	padding: 10px;
+	margin-left: 50px;
+}
+.inputbox{
+	height: 40px;
+	width: 250px;
+	padding-left: 4px;
+}
+.sidebar button{
+	font-size: 16px;
+	padding: 8px;
+	background-color: brown;
+	color: white;
+	border-radius: 20px;
+	border: none;
+	margin: 16px;
+	padding: 12px;
+	margin-left: 80px;
+	cursor: pointer;
+	border-bottom: 4px solid black;
+}
+.sidebar button a{
+	font-size: 16px;
+	padding: 8px;
+	background-color: brown;
+	color: white;
+	border-radius: 20px;
+	border: none;
+	margin: 12px;
+	padding: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.sidebar h3 {
+	margin-top: 8px;
+ 	text-align: center; 
+}
+.sidebar a{
+	columns: black;
+	text-decoration: none !important;
+	font-size: 24px;
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	background: black;
+	color: white;
+	text-align: center;
+	clear: both;
+}
+footer h1{
+	line-height: 100px;
+}
+
+
+

@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+header{
+	background:#566c2b ;
+	display: flex;
+	align-items: center;
+	
+}
+header ul{
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+header a{
+	color: white;
+}
+#logo{
+	margin: 0 auto;
+	font-size: 30px;
+}
+#menu li{
+	padding: 10px;
+}
+
+#Social_links li{
+	padding: 10px;
+}
+#main{
+	display: flex;
+	height: 100%;
+}
+aside{
+	flex: 0 0 20vw;
+	background: beige;
+	padding: 10px;
+}
+aside ul{
+	list-style: none;
+	padding: 0;
+}
+aside ul a{
+	color: #566c3b;
+	padding: 10px;
+	display: block;
+	border-bottom: 1px solid grey;
+}
+aside img{
+	width: 100%;
+}
+article{
+	padding: 10px;
+}
+article h2{
+	margin-top: 10px;
+	padding: 10px 0;
+}
+.services_container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.service_box{
+	border: 1px solid #eee;
+	flex-basis: 32%;
+	width: 370px;
+	max-width: 370px;
+	padding: 10px;
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: column;
+}
+.service_box h3{
+	margin: 5px 0 10px;
+}
+.service_box p{
+	margin: 0 0 10px;
+}
+.service_box img{
+	width: 100%;
+}
+.call_to_action{
+	align-self: flex-start;
+	margin: auto;
+}
+.call_to_action a{
+	background: grey;
+	border: 2px solid transparent;
+	color: white;
+	padding: 8px 13px;
+	display: block;
+}
+.call_to_action a:hover {
+	color: grey;
+	background: transparent;
+	border: 2px solid blue;
+}
+footer{
+	background: #566c3b;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	margin: 2.6% 0 0;
+}
+
+@media screen and (max-width: 850px){
+	.service_box{
+		flex-basis: 48%;
+	}
+	aside{
+		flex: 0 0 30vw;
+	}
+}
+@media screen and (max-width: 600px){
+	header{
+		flex-direction: column;
+	}
+	#logo{
+		order: -1;
+	}
+	article{
+		order: -1;
+	}
+	#main{
+		flex-direction: column;
+	}
+	.services_container{
+		flex-direction: column;
+		align-items: center;
+	}
+	h2{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}

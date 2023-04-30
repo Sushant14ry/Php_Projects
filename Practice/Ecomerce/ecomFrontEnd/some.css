@@ -1,0 +1,11 @@
+.email_verify_otp{
+	display: none;
+}
+.height_60px{
+	height: 60px !important;
+}
+#email_otp_result{
+	margin-top: 15px;
+	font-weight: bold;
+	font-size: 20px;
+}

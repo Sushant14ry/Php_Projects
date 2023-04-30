@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List </title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background-color: #f5f5f5;;
+			font-family: sans-serif;
+			margin: 0;
+		}
+		h1{
+			color: rebeccapurple;
+			text-align: center;
+			font-size: 4rem;
+			opacity: 0.8;
+		}
+		form{
+			max-width: 100%;
+			width: 400px;
+			margin: auto;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+		}
+		.input{
+			padding: 1rem 2rem;
+			display: block;
+			width: 100%;
+			font-size: 2rem;
+			margin-top: 8%;
+			border: none;
+			border-bottom: 2px solid black;
+
+		}
+		.input::placeholder{
+			color:#f5f5f5;
+		}
+		.todos{
+			background-color: white;
+			margin-top: 12px;
+			padding: 0;
+			list-style: none;
+		}
+		.todos li{
+			 font-size: 1.5rem;
+			 border-top:  1px solid #b5b5b5;
+			 padding: 1rem 2rem;
+		}
+	</style>
+</head>
+<body>
+	<h1>To Do List</h1>
+	<form id="form">
+		<input type="text" name="input" class="input" placeholder="Enter Your Today List" autocomplete="off">
+		<ul class="todos" id="todos">
+			<li>This is a Todo</li>
+		</ul>
+	</form>
+
+<script type="text/javascript">
+	const form = document.getElementById('form');
+	const input = document.getElementById('input');
+	const todos = document.getElementById('todos')
+
+	form.addEventListener('submit',(e) =>{
+		e.preventDefault();
+
+		const todoText = input.value;
+
+		if(todos){
+			const todoEl = document.createElement('li');
+			todoEl.innerText = todoText;
+			todos.appendChild(todo)
+		}
+	})
+</script>
+
+</body>
+</html>

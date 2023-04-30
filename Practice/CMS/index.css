@@ -1,0 +1,14 @@
+.left a{
+	margin:20px;
+	font-weight: bold;
+}
+.right{
+	font-weight: bold;
+}
+
+/*Sidebar start*/
+
+body a{
+	text-decoration: none;
+
+}

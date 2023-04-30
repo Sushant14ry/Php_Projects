@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count Down</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background-image: url('tree.jpg');
+			background-size: cover;
+			background-position: center center;
+			min-height: 100vh;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			flex-direction: column;
+		}
+		h2{
+			font-size: 4rem;
+			margin-top: -5rem;
+			margin-bottom: 2rem;
+
+		}
+		.countdown_container{
+			display: flex;
+		}
+		.big_text{
+			font-size: 6rem;
+			line-height: 1;
+			margin: 0 2rem;
+			font-weight: bold;
+		}
+		.countdown_el{
+			text-align: center;
+		}
+		.countdown_el span{
+			font-size: 1.5rem;
+		}
+	
+		
+	</style>
+</head>
+<body>
+	<h2>New year Eve</h2>
+
+	<div class="countdown_container">
+		<div class="countdown_el days_c">
+			<p class="big_text" id="days">0</p><span>Days</span>
+		</div>
+		<div class="countdown_el Hours_c">
+			<p class="big_text" id="Hours">0</p><span>Hours</span>
+		</div>
+		<div class="countdown_el Minutes_c">
+			<p class="big_text" id="Minutes">0</p><span>Minutes</span>
+		</div>
+		<div class="countdown_el Seconds_c">
+			<p class="big_text" id="Seconds">0</p><span>Seconds</span>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		const DaysEL = document.getElementById('days');
+		const HoursEl = document.getElementById('Hours');
+		const MinutesEl = document.getElementById('Minutes');
+		const SecondsEl = document.getElementById('Seconds');
+
+		const NewYear = '1 Jan 2021';
+
+		function countdown(){
+			const NewYearDate = new Date(NewYear);
+			const currentDate = new Date();
+			// console.log(NewYearDate - currentDate);
+
+			const DiffYear = (NewYearDate - currentDate) / 1000;
+			const days = Math.floor(DiffYear / 3600 / 24);
+			const Hours = Math.floor(DiffYear / 3600) % 24;
+			const Minutes = Math.floor(DiffYear / 60) % 24 % 60;
+			const Seconds = Math.floor(DiffYear) % 60;
+			
+
+			console.log(days,Hours,Minutes,Seconds );
+		
+			DaysEL.innerHTML = days;
+			HoursEl.innerHTML = Hours;
+			MinutesEl.innerHTML = Minutes;
+			SecondsEl.innerHTML = Seconds;
+		}
+		// Initial Call
+		countdown();
+		setInterval(countdown,1000);
+	</script>
+</body>
+</html>

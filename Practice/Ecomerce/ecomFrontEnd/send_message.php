@@ -1,0 +1,15 @@
+<?php
+require('connection.php');
+require('function.php');
+
+	$name=get_safe_value($con,$_POST['name']);
+	$email=get_safe_value($con,$_POST['email']);
+	$mobile=get_safe_value($con,$_POST['mobile']);
+	$comment=get_safe_value($con,$_POST['comment']);
+	$added_on= date('Y-m-d h:i:s');
+
+	$sql="INSERT INTO `contact_us`(`name`, `email`, `mobile`, `comment`, `added_on`) VALUES ('$name','$email','$mobile','$comment','$added_on')";
+	$result=mysqli_query($con,$sql);
+	
+	echo "Thank You !!";
+?> 
